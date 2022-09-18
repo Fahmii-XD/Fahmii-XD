@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="./src/css/aos.all.min.css">
+    <link rel="stylesheet" href="./src/css/index.all.min.css">
+    <title>Portfolio | Fahmi XD</title>
+</head>
+<body id="home">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./src/img/logo.jpg" alt="Logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link" href="#galery">Galery</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#project">Project</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="btn">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="hero">
+            <div class="sec-1" data-aos="fade-right">
+                <span class="title">No <span class="text-danger">Pain</span> No <span class="text-danger">Gain</span><br></span>
+                <span class="desc">Semua masalah pasti ada jalan keluarnya, Kalo <span class="text-danger">Berusaha</span>.<br></span>
+                <button type="button" class="btn btn-danger">enter for isekai</button>
+            </div>
+            <div class="sec-2" data-aos="zoom-out">
+                <img src="./src/img/hero.jpg" alt="My photos" />
+                <span class="name"><br>Hi i'am Fahmi XD 👋</span>
+            </div>
+        </div>
+        <section id="galery"></section>
+        <div class="galery">
+            <span class="title-top btn btn-danger bg-danger" data-aos="zoom-out">Galery</span>
+            <div class="d-grid-galery" data-aos="zoom-in">
+                <img src="./src/img/galery1.jpg" alt="Galery photos" />
+                <img src="./src/img/galery2.jpg" alt="Galery photos" />
+                <img src="./src/img/galery3.jpg" alt="Galery photos" />
+                <img src="./src/img/galery4.jpg" alt="Galery photos" />
+            </div>
+        </div>
+        <section id="about"></section>
+        <div class="about">
+            <span class="title-top-black btn btn-danger bg-danger" data-aos="zoom-out">About</span>
+            <div class="d-grid-about container">
+                <div class="sec-1" data-aos="fade-up-right">
+                    <span>Hi, I'm Fahmi XD, live in <span class="text-danger">Bandung</span>. Small town with another name <span class="text-danger">Cilanggari City</span>.<br></span>
+                    <span class="details">Detail<br></span>
+                    <span class="details-ds">Name: M.Fahmi<br></span>
+                    <span class="details-ds">Class: 9th<br></span>
+                    <span class="details-ds">Age: 15<br></span>
+                    <span class="details-ds">Hobies: Coding, Gaming<br></span>
+                </div>
+                <div class="sec-2" data-aos="fade-down-right" data-aos-delay="300">
+                    <span>During college, participated in various events, internal campus organizations or external campuses. Up until now, the focus of my career has been <span class="text-danger">web developer</span>, but when bored can <span class="text-danger">playing games</span>, street photography or make UI design or another graphic design.<br></span>
+                    <span>During college, participated in various events, internal campus organizations or external campuses. Up until now, the focus of my career has been <span class="text-danger">web developer</span>, but when bored can <span class="text-danger">playing games</span>, street photography or make UI design or another graphic design.</span>
+                </div>
+                <div class="sec-3" data-aos="fade-right" data-aos-delay="400">
+                    <img src="./src/img/galery4.jpg" alt="Galery photos" />
+                    <span class="image-desc">Maman racing<br></span>
+                </div>
+            </div>
+        </div>
+        <section id="project"></section>
+        <div class="project">
+            <span class="title-top btn btn-danger bg-danger" data-aos="zoom-out">Project</span>
+            <div class="d-flex-project container">
+                <div class="text" data-aos="fade-up-right">
+                    <h3>Blog</h3>
+                    <h5>Blog seputar <span class="text-danger">Game</span>, <span class="text-danger">Edukasi</span>, <span class="text-danger">Tips</span>, <span class="text-danger">Review</span>, dan lain-lain<br>Hanya pelengkap portfolio, aslinya gk ada:v</h5>
+                    <button class="btn btn-danger" type="button">Open Blog</button>
+                </div>
+                <img src="./src/img/galery2.jpg" alt="Project 1" data-aos="flip-right" />
+            </div>
+        </div>
+        <section id="contact"></section>
+        <div class="contact">
+            <div class="contact-contact container">
+                <span class="title-top-black-form btn btn-danger" data-aos="zoom-in">Contact</span>
+                <form class="form" id="form-submit" data-aos="fade-down">
+                    <div class="input-box">
+                        <input type="text" name="name" value="" required="required" />
+                        <span>Your Name</span>
+                        <i></i>
+                    </div>
+                    <div class="input-box">
+                        <textarea name="message" value="" required="required"></textarea>
+                        <span>Your message</span>
+                        <i></i>
+                    </div>
+                    <span class="title-top-black-form-desc d-flex me-auto ms-auto mb-3">Jangan lupa save nomor gwej</span>
+                    <button class="btn btn-danger" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h5 class="footer-text">
+            <section>
+                Made with <a href="https://getbootstrap.com">Bootstrap</a> and hosted on <a href="https://vercel.com">Vercel</a><br>
+            </section>
+            <section>
+                <span class="made">copyright &copy; <script>
+                    document.write(new Date().getFullYear());
+                </script>
+                    - developed by
+                    <b><a href="https://github.com/Fahmii-XD" target="_blank">Fahmi XD</a></b>
+                </span>
+            </section>
+        </h5>
+        <div class="btnUp" onclick="scrollToTop();">
+            <span class="btnUp-up"></span>
+        </div>
+    </footer>
+
+    <script src="./src/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/js/sweetalert2.all.min.js"></script>
+    <script src="./src/js/aos.all.min.js"></script>
+    <script src="./src/js/index.all.min.js"></script>
+</body>
+</html>
