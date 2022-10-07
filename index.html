@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./src/img/logo.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="./src/css/bootstrap-icons.css">
-    <link rel="stylesheet" href="./src/css/aos.all.min.css">
     <link rel="stylesheet" href="./src/css/index.all.min.css">
+    <!--
+    <link rel="stylesheet" href="./src/css/aos.all.min.css">
+        -->
     <title>Portfolio | Fahmi XD</title>
 </head>
 <body id="home">
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#home">
                 <img src="./src/img/logo.jpg" alt="Logo" />
@@ -20,12 +23,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     <a class="nav-link" href="#galery">Galery</a>
                     <a class="nav-link" href="#about">About</a>
                     <a class="nav-link" href="#project">Project</a>
                     <a class="nav-link" href="#contactAndIntro">Contact / Intro</a>
-                    <a class="btn">Login</a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#random-image">Random Image</a>
+                    <a class="btn ms-lg-1">Login</a>
                 </div>
             </div>
         </div>
@@ -35,28 +40,28 @@
             <div class="sec-1" data-aos="fade-right">
                 <span class="title">No <span class="text-danger">Pain</span> No <span class="text-danger">Gain</span><br></span>
                 <span class="desc">Semua masalah pasti ada jalan keluarnya, Kalo <span class="text-danger">Berusaha</span>.<br></span>
-                <button type="button" class="btn btn-danger">enter for isekai</button>
+                <button type="button" class="btn origin">enter for isekai<i></i><i></i></button>
             </div>
             <div class="sec-2" data-aos="fade-left" data-aos-delay="300">
-                <img src="./src/img/hero.jpg" alt="My photos" />
+                <img class="animUpDown" src="./src/img/hero.jpg" alt="My photos" />
                 <span class="name"><br>Hi i'am Fahmi XD 👋</span>
             </div>
         </div>
         <section id="galery"></section>
         <div class="galery">
-            <span class="title-top btn btn-danger bg-danger" data-aos="zoom-out">Galery</span>
+            <span class="title-top btn" data-aos="zoom-out">Galery</span>
             <div class="d-grid-galery" data-aos="zoom-out">
                 <script type="application/javascript" charset="utf-8">
-                    for (let i = 2; i < 11; i++) {
+                    for (let i = 1; i < 6; i++) {
                         document.write('<img src="./src/img/galery'+String(i)+'.jpg" alt="Galery photos" />')
                     }
                 </script>
-                <img src="./src/img/galery1.jpg" alt="Galery photos" />
             </div>
+            <h5>Scroll ke kanan!</h5>
         </div>
         <section id="about"></section>
         <div class="about">
-            <span class="title-top-black btn btn-danger bg-danger" data-aos="zoom-out">About</span>
+            <span class="title-top-black btn" data-aos="zoom-out">About</span>
             <div class="d-grid-about container">
                 <div class="sec-1" data-aos="fade-up-right">
                     <span>Hi, I'm Fahmi XD, live in <span class="text-danger">Bandung</span>. Small town with another name <span class="text-danger">Cilanggari City</span>.<br></span>
@@ -71,28 +76,28 @@
                     <span>During college, participated in various events, internal campus organizations or external campuses. Up until now, the focus of my career has been <span class="text-danger">web developer</span>, but when bored can <span class="text-danger">playing games</span>, street photography or make UI design or another graphic design.</span>
                 </div>
                 <div class="sec-3" data-aos="fade-up" data-aos-delay="400">
-                    <img src="./src/img/galery4.jpg" alt="Galery photos" />
-                    <span class="image-desc">Maman racing<br></span>
+                    <img src="./src/img/details-image.jpg" alt="Details Foto" />
+                    <span class="image-desc">Merasa Keren<br></span>
                 </div>
             </div>
         </div>
         <section id="project"></section>
         <div class="project">
-            <span class="title-top btn btn-danger bg-danger" data-aos="zoom-out">Project</span>
+            <span class="title-top btn" data-aos="zoom-out">Project</span>
             <div class="d-flex-project container">
                 <div class="text" data-aos="fade-right" data-aos-delay="300">
                     <h3>Blog</h3>
                     <h5>Blog seputar <span class="text-danger">Game</span>, <span class="text-danger">Edukasi</span>, <span class="text-danger">Tips</span>, <span class="text-danger">Review</span>, dan lain-lain<br><span class="desc">Note: Hanya pelengkap portfolio, aslinya gk ada:v</span></h5>
-                    <button class="btn btn-danger" type="button">Open Blog</button>
+                    <button class="btn origin" type="button">Open Blog<i></i><i></i></button>
                 </div>
-                <img src="./src/img/galery2.jpg" alt="Project 1" data-aos="fade-left" data-aos-delay="300" />
+                <img src="./src/img/project-image.jpeg" alt="Laptop Image" data-aos="fade-left" data-aos-delay="300" />
             </div>
         </div>
         <section id="contactAndIntro"></section>
         <div class="d-grid-contactAndIntro">
             <div class="contact">
                 <div class="contact-contact container">
-                    <span class="title-top-black-form btn btn-danger" data-aos="zoom-in">Contact</span>
+                    <span class="title-top-black-form btn" data-aos="zoom-in">Contact</span>
                     <form class="form" id="form-submit" data-aos="fade-down">
                         <div class="input-box">
                             <input type="text" name="name" value="" required="required" />
@@ -105,13 +110,13 @@
                             <i></i>
                         </div>
                         <span class="title-top-black-form-desc d-flex me-auto ms-auto mb-3">Jangan lupa save nomor gwej</span>
-                        <button class="btn btn-danger" type="submit">Submit</button>
+                        <button class="btn origin-swipe" type="submit">Submit<i></i></button>
                     </form>
                 </div>
             </div>
             <div class="intro">
                 <div class="intro-intro container">
-                    <span class="title-top-black-form btn btn-danger" data-aos="zoom-in">Intro</span>
+                    <span class="title-top-black-form btn" data-aos="zoom-in">Intro</span>
                     <form class="form" id="form-submit" data-aos="fade-down">
                         <div class="input-box">
                             <input type="text" name="name" value="" required="required" />
@@ -123,9 +128,123 @@
                             <span>Your Crush</span>
                             <i></i>
                         </div>
-                        <span class="title-top-black-form-desc d-flex me-auto ms-auto mb-3">Note: Hanya untuk bersenang - senang, jangan pake nama panjang.</span>
-                        <button class="btn btn-danger" type="submit">Submit</button>
+                        <span class="title-top-black-form-desc d-flex me-auto ms-auto mb-3">Note: Just for fun</span>
+                        <button class="btn origin-swipe" type="submit">Submit<i></i></button>
                     </form>
+                </div>
+            </div>
+        </div>
+        <section id="skills"></section>
+        <div class="skills">
+            <span class="title-top-black btn" data-aos="zoom-out">Skills</span>
+            <div class="d-grid-skills container">
+                <section class="language">
+                    <h3 class="title mt-3 ms-lg-1" data-aos="fade-right">Bahasa Pemrograman</h3>
+                    <div class="d-grid-skills-language" data-aos="fade-down-right" data-aos-delay="200">
+                        <img src="./src/img/html-logo.png" alt="Bahasa pemrograman" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="HTML" data-bs-placement="bottom" />
+                        <img src="./src/img/css-logo.png" alt="Bahasa pemrograman" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="CSS" data-bs-placement="bottom" />
+                        <img src="./src/img/javascript-logo.png" alt="Bahasa pemrograman" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="JAVASCRIPT" data-bs-placement="bottom" />
+                        <img src="./src/img/php-logo.png" alt="Bahasa pemrograman" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="PHP" data-bs-placement="bottom" />
+                        <img src="./src/img/python-logo.png" alt="Bahasa pemrograman" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="PYTHON" data-bs-placement="bottom" />
+                        <img src="./src/img/java-logo.png" alt="Bahasa pemrograman" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="JAVA" data-bs-placement="bottom" />
+                    </div>
+                </section>
+                <section class="framework">
+                    <h3 class="title mt-5 mt-lg-3 ms-lg-1" data-aos="fade-left" data-aos-delay="400">Framework</h3>
+                    <div class="d-grid-skills-framework" data-aos="fade-up" data-aos-delay="600">
+                        <img src="./src/img/codeigniter-logo.png" alt="Framework" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="CODEIGNITER" data-bs-placement="bottom" />
+                        <img src="./src/img/flask-logo.png" alt="Framework" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="FLASK" data-bs-placement="bottom" />
+                        <img src="./src/img/jquery-logo.png" alt="Framework" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="JQUERY" data-bs-placement="bottom" />
+                        <img src="./src/img/laravel-logo.png" alt="Framework" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="LARAVEL" data-bs-placement="bottom" />
+                        <img src="./src/img/bootstrap-logo.png" alt="Framework" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="BOOTSTRAP" data-bs-placement="bottom" />
+                    </div>
+                </section>
+                <section class="persentase">
+                    <h3 class="title mt-5 mt-lg-5 mb-3 ms-lg-1" data-aos="fade-left" data-aos-delay="400">Persentase</h3>
+                    <div class="d-grid-skills-persentase" data-aos="fade-down-left" data-aos-delay="600">
+                        <div class="html">
+                            <div class="text">
+                                HTML
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    90%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="css">
+                            <div class="text">
+                                CSS
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    50%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="javascript">
+                            <div class="text">
+                                JAVASCRIPT
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                    30%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="php">
+                            <div class="text">
+                                PHP
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                                    15%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="python">
+                            <div class="text">
+                                PYTHON
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                    95%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <section id="random-image"></section>
+        <div class="galery">
+            <span class="title-top btn" data-aos="zoom-in">Random Image</span>
+            <div class="d-grid-galery" data-aos="zoom-out" data-aos-delay="200">
+                <script type="application/javascript" charset="utf-8">
+                    for (let i = 2; i < 11; i++) {
+                        document.write('<img src="./src/img/randomImage'+String(i)+'.jpg" alt="Galery" />')
+                    }
+                </script>
+            </div>
+            <h5>Scroll ke kanan!</h5>
+        </div>
+        <div class="sosial-media">
+            <span class="title-top-black btn" data-aos="zoom-in">More</span>
+            <div class="d-grid-sosial-media">
+                <div class="box" data-aos="fade-right">
+                    <i class="bi bi-facebook"></i>
+                    <h5>Akun <span class="text-primary">Facebook</span> utama, akun hasil giveaway wkwkwk. Jarang buka <span class="text-primary">Facebook</span> sekali di buka liat meme doang atau sekedar share meme orang</h5>
+                    <button class="btn origin-energy" style="width: 50%;">Facebook<i></i><i></i></button>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-delay="200">
+                    <i class="bi bi-whatsapp"></i>
+                    <h5>Paling aktif di sini, Jadi kalo ada yang mau ditanyakan langsung ke <span class="text-success">Whatsapp</span> aja. Ya Kemungkinan gak fast respon tapi tetep save oke 👍</h5>
+                    <button class="btn origin-energy mt-lg-4" style="width: 50%;">Whatsapp<i></i><i></i></button>
+                </div>
+                <div class="box" data-aos="fade-left" data-aos-delay="400">
+                    <i class="bi bi-github"></i>
+                    <h5>Disini tempat saya upload project-project portfolio, <span class="text-primary">Facebook</span> Cracker, Tiktok Cracker, <span class="text-danger">Instagram</span> Cracker, dll</h5>
+                    <button class="btn origin-energy mt-lg-5" style="width: 50%;">Github<i></i><i></i></button>
                 </div>
             </div>
         </div>
@@ -133,10 +252,23 @@
 
     <footer class="footer">
         <h5 class="footer-text">
-            <section>
+            <section class="d-flex justify-content-lg-center align-items-lg-center mt-3">
+                HFD ytta (Yang tawu tawu aja 🥴)<br>
+            </section>
+            <section class="text-start mt-3">
+                Daftar isi:<br>
+                • Home<br>
+                • Galery<br>
+                • About<br>
+                • Project<br>
+                • Contact / Intro<br>
+                • Skills<br>
+                • Random Image<br>
+            </section>
+            <section class="mt-3">
                 Made with <a href="https://getbootstrap.com">Bootstrap</a> and hosted on <a href="https://vercel.com">Vercel</a><br>
             </section>
-            <section>
+            <section class="mt-lg-3">
                 <span class="made">copyright &copy; <script>
                     document.write(new Date().getFullYear());
                 </script>
@@ -152,7 +284,7 @@
 
     <script src="./src/js/bootstrap.bundle.min.js"></script>
     <script src="./src/js/sweetalert2.all.min.js"></script>
-    <script src="./src/js/aos.all.min.js"></script>
+    <!--<script src="./src/js/aos.all.min.js"></script>-->
     <script src="./src/js/index.all.min.js"></script>
 </body>
 </html>
